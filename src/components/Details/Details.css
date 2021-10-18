@@ -1,3 +1,33 @@
-.detail-container{
+.detail{
     height: 1000px;
+}
+.detail-img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+.w-100{
+    background-color: black;
+}
+.card3{
+    border: 1px solid black;
+    width: 50%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgba(53, 52, 51, 0.425);
+    border-radius: 10px;
+}
+
+@media only screen and (max-width:688px){
+    .detail{
+        width: 550px;
+    }
+    .detail-img{
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+    }
+    .card3{
+        padding: 20px;
+    }
 }

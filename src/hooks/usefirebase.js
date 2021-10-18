@@ -1,5 +1,5 @@
 import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged } from "firebase/auth";
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import initializeAuthentication from "../Firebase/Firebase.init";
 
 
@@ -7,25 +7,61 @@ initializeAuthentication()
 
 const useFirebase = () => {
     const [user, setUser] = useState({})
+    const [error, setError] = useState('');
+    // const [email, setEmail] = useState('')
+    // const [password, setPassword] = useState('')
     const [isLoading, setIsLoading] = useState(true);
 
 
     const auth = getAuth();
 
+    // const handleRegister = e => {
+    //     e.preventDefault();
+    // }
+
+    // const handleEmailChange = e => {
+    //     setEmail(e.target.value);
+    // }
 
 
-    const signInusingGoogle = () => {
+    // const handlePasswordChange = e => {
+    //     createUserWithEmailAndPassword(auth, email, password)
+    //         .then(result => {
+    //             const user = result.user
+    //             console.log(user);
+    //         })
+    //     setPassword(e.target.value);
+
+    // }
+
+
+    const signinUsingGoogle = () => {
         const googleProvider = new GoogleAuthProvider();
-
         signInWithPopup(auth, googleProvider)
             .then(result => {
                 setUser(result.user)
             })
+            .catch(error => {
+                setError(error.message);
+            })
+
+
+    }
+
+
+
+    const logOut = () => {
+        setIsLoading(true);
+        signOut(auth)
+            .then(() => {
+                setUser({})
+            })
             .finally(() => setIsLoading(false));
     }
 
+
     useEffect(() => {
-        const unsubscribed = onAuthStateChanged(auth, user => {
+        const unsubscribed = onAuthStateChanged(auth, (user) => {
             if (user) {
                 setUser(user)
             }
@@ -37,18 +73,13 @@ const useFirebase = () => {
         return () => unsubscribed
     }, [])
 
-    const logOut = () => {
-        setIsLoading(true);
-        signOut(auth)
-            .then(() => { })
-            .finally(() => setIsLoading(false));
-    }
-
     return {
         user,
         isLoading,
-        signInusingGoogle,
-        logOut
+        logOut,
+        signinUsingGoogle,
+        error
+
     }
 }
 

@@ -1,4 +1,4 @@
-import React from 'react';
+// import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
@@ -8,37 +8,53 @@ import "./Login.css"
 
 
 
+
 const Login = () => {
 
-    const { signInusingGoogle } = useAuth()
+    const { signinUsingGoogle, error } = useAuth()
+    // const location = useLocation();
+    // const history = useHistory();
+    // const redirect_uri = location.state?.from || '/login';
+
+    // const handleGoogleSignIn = () => {
+
+    //     signInUsingGoogle()
+    //         .then(result => {
+    //             // history.push(redirect_uri);
+    //         })
+    // }
 
     return (
         <div>
             <div>
                 <Header></Header>
             </div>
-            <div className="login-Container text-center">
-                <h1 className="tittle">Create Account</h1>
-                <Form>
-                    <label htmlFor="email"> Email : </label>  <input required type="email" name="email" id="" />
-                    <br />
-                    <br />
-                    <label htmlFor="password"> Password : </label>   <input required type="password" name="password" id="" />
 
+            <div className="login-Container text-center">
+                <h3 className="tittle">Log In</h3>
+                <Form>
+                    <label htmlFor="inputEmail3" className=""> Email :</label>
+                    <input type="email" className="input" id="inputEmail3" required />
+                    <br />
+                    <br />
+                    <label htmlFor="inputPassword3" className=""> Password : </label>
+                    <input type="password" className="" id="inputPassword3" required />
                     <br />
                     <br />
                     <input className="btn-2" type="submit" value="Submit" />
                 </Form>
+
+
                 <br />
-                <Link className="/register">Already Register ?</Link>
+
+                <Link to="/register">New to Nutritinist Hub?</Link>
                 <br />
                 <br />
-                <Link>
-                    <button onClick={signInusingGoogle} className="btn-2 p-2 mt-4">Google Sign In</button>
-                </Link>
+                <button onClick={signinUsingGoogle} className="btn-2 p-2 mt-4">Google Sign In</button>
+                <p>{error}</p>
             </div>
 
-            <div>
+            <div className="w-100">
                 <Footer></Footer>
             </div>
         </div>

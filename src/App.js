@@ -5,10 +5,12 @@ import Contact from './components/Contact/Contact';
 import NotFound from './components/NotFound/NotFound';
 import About from './components/About/About';
 import Details from './components/Details/Details';
+import Feature from './components/Feature/Feature';
 import Login from './components/Login/Login';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
-import Feature from './components/Feature/Feature';
+import Register from './components/Register/Register';
+
 
 
 
@@ -26,6 +28,7 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
+
             <Route path="/feature">
               <Feature></Feature>
             </Route>
@@ -40,6 +43,10 @@ function App() {
 
             <Route path="/login">
               <Login></Login>
+            </Route>
+
+            <Route path="/register">
+              <Register></Register>
             </Route>
 
             <PrivateRoute path="/details/:serviceId">

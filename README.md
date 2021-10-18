@@ -7,5 +7,5 @@
 * Info and details about doctors
 * Free consultation available with doctors
 * Easy to book and appoint
-* Will get to know about healt and nutrition
+* Will get to know about health and nutritionsxz
 
