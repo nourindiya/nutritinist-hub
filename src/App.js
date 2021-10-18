@@ -5,40 +5,54 @@ import Contact from './components/Contact/Contact';
 import NotFound from './components/NotFound/NotFound';
 import About from './components/About/About';
 import Details from './components/Details/Details';
+import Login from './components/Login/Login';
+import AuthProvider from './context/AuthProvider';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import Feature from './components/Feature/Feature';
 
 
 
 function App() {
   return (
     <div>
-      <BrowserRouter>
-        <Switch>
+      <AuthProvider>
+        <BrowserRouter>
+          <Switch>
 
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
 
-          <Route path="/home">
-            <Home></Home>
-          </Route>
+            <Route path="/home">
+              <Home></Home>
+            </Route>
+            <Route path="/feature">
+              <Feature></Feature>
+            </Route>
 
-          <Route path="/about">
-            <About></About>
-          </Route>
+            <Route path="/about">
+              <About></About>
+            </Route>
 
-          <Route path="/contact">
-            <Contact></Contact>
-          </Route>
+            <Route path="/contact">
+              <Contact></Contact>
+            </Route>
 
-          <Route path="/details/:serviceId">
-            <Details></Details>
-          </Route>
+            <Route path="/login">
+              <Login></Login>
+            </Route>
 
-          <Route path="*">
-            <NotFound></NotFound>
-          </Route>
-        </Switch>
-      </BrowserRouter>
+            <PrivateRoute path="/details/:serviceId">
+              <Details></Details>
+            </PrivateRoute>
+
+            <Route path="*">
+              <NotFound></NotFound>
+            </Route>
+
+          </Switch>
+        </BrowserRouter>
+      </AuthProvider>
     </div >
   );
 }
