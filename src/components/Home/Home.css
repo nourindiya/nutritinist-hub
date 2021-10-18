@@ -1,0 +1,9 @@
+.home-body{
+    height: 1740px;
+}
+
+@media only screen and (max-width:688px){
+    .home-body{
+       height: 4000px;
+    }
+}
