@@ -28,11 +28,11 @@ const Contact = () => {
                 </div>
 
 
-                <div className="form-container">
+                <div className="form-container mx-auto text-center">
                     <div className="form-img">
                         <img src="https://image.freepik.com/free-vector/travel-road-street-map-with-location-pin-symbol-vector-illustration_1284-2005.jpg" alt="" srcset="" />
                     </div>
-                    <div>
+                    <div className="mx-auto">
                         <Form>
                             <label>Name :</label> <br />
                             <input className="input2" type="text" name="name" placeholder="Enter Name" id="" />
@@ -61,7 +61,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <div>
-                    <div>
+                    <div className="mx-auto">
                         <Row className="row justify-content-lg-center justify-content-sm-center mx-auto mt-5">
                             <Col className="text-center" sm={3}>
                                 <p className="tittle"> <FontAwesomeIcon className="red" icon={faMap} /> Gulsan 1,Dhaka,Bangladesh </p>
@@ -74,7 +74,8 @@ const Contact = () => {
                                 <p>Contact Number</p>
                             </Col>
                             <Col className=" text-center" sm={3}>
-                                <p className="tittle"> <FontAwesomeIcon className="red" icon={faMailBulk} /> nutritionhub@gmail.com
+                                <p className="tittle"> <FontAwesomeIcon className="red" icon={faMailBulk} /> nutritionhub@gmail <br />
+                                    .com
                                 </p>
                                 <p>Email Address</p>
                             </Col>

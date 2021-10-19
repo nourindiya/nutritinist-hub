@@ -12,25 +12,25 @@ const Feature = () => {
             <div className="feature-body">
 
                 <div>
-                    <Row className="mt-3">
-                        <Row className="pics">
-                            <Col sm>
-                                <img className="img4" src="https://image.freepik.com/free-vector/hand-drawn-hospital-reception-scene-with-people-wearing-face-masks_23-2148813989.jpg" alt="" srcset="" />
-                            </Col>
-                            <Col sm>
-                                <img className="img4" src="https://image.freepik.com/free-vector/doctor-patient-desk-hospital-office-clinic-visit-exam-meeting-with-physician-conversation-with-medic-about-diagnosis-results_284092-936.jpg" alt="" srcset="" />
-                            </Col>
-                            <Col sm>
-                                <img className="img4" src="https://image.freepik.com/free-vector/hospital-reception-scene-with-face-masks_52683-55277.jpg" alt="" />
-                            </Col>
-                        </Row>
+                    <Row className="mt-3 pics">
+                        {/* <Row className="pics"> */}
+                        <Col sm>
+                            <img className="img4" src="https://image.freepik.com/free-vector/hand-drawn-hospital-reception-scene-with-people-wearing-face-masks_23-2148813989.jpg" alt="" srcset="" />
+                        </Col>
+                        <Col sm>
+                            <img className="img4" src="https://image.freepik.com/free-vector/doctor-patient-desk-hospital-office-clinic-visit-exam-meeting-with-physician-conversation-with-medic-about-diagnosis-results_284092-936.jpg" alt="" srcset="" />
+                        </Col>
+                        <Col sm>
+                            <img className="img4" src="https://image.freepik.com/free-vector/hospital-reception-scene-with-face-masks_52683-55277.jpg" alt="" />
+                        </Col>
+                        {/* </Row> */}
                     </Row>
                 </div>
 
                 <div>
                     <h1 className="tittle">Our Team</h1>
-                    <Row className="tt">
-                        <Col className="t mb-3 mx-3" xs={6} md={3}>
+                    <Row className="tt mx-auto">
+                        <Col className="t mb-3 mx-5" xs={6} md={3}>
                             <div>
                                 <img className="team" src="https://image.freepik.com/free-photo/portrait-confident-senior-man-wearing-glasses_1262-1875.jpg?1" alt="" srcset="" />
                             </div>
@@ -59,7 +59,7 @@ const Feature = () => {
                         </Col>
                     </Row>
                     <div>
-                        <Row className="text-center imp">
+                        <Row className="text-center mx-auto imp">
                             <Col>
                                 <img className="img-5" src="https://image.freepik.com/free-vector/doctors-nurses-face-masks_107791-5481.jpg" alt="" srcset="" />
                             </Col>
@@ -80,7 +80,7 @@ const Feature = () => {
                 <Footer></Footer>
             </div>
 
-        </div>
+        </div >
     );
 };
 
