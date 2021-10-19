@@ -1,16 +1,7 @@
-.car2{
-    height: 400px;
-    width: 300px;
-}
-.pics{
-margin-left: 75px;
-margin-bottom: 40px;
-}
 .img4{
-    width: 400px;
-    height: 200px;
-    padding: 0px;
-}
+    width: 300px;
+    height: 300px;
+} 
 .bg-2{
     background-color: honeydew;
 }
@@ -32,25 +23,16 @@ margin-bottom: 40px;
 }
 
 
-
-
-
-
 @media only screen and (max-width:688px){
 
-    .img4{
-        width: 200px;
-       margin: 0px;
-        padding: 0px;
-    }
-
    .feature-body{
-       height: 2610px;
+       height: 3000px;
    }
    .t{
- margin: 0px;
- padding: 0px;
- width: 200px;
+       
+       margin: 0px;
+       padding: 0px;
+       width: 200px;
 }
 .tt{
     margin: 0px;
@@ -62,9 +44,7 @@ margin-bottom: 40px;
   }
 
    .imp{
-      
        justify-content: center;
-    
    }
  
 }

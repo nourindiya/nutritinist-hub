@@ -4,7 +4,7 @@ import "./Experts.css"
 
 const Experst = () => {
     return (
-        <Container className="expert-container pt-5">
+        <Container className="expert-container pt-5 mb-5">
             <Row className="text-center justify-content-lg-center justify-content-sm-center mx-auto">
                 <Col>
                     <p className="tittle fw-bold pt-5">Nutritionist Hub</p>

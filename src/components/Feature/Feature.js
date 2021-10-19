@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import "./Feature.css"
@@ -11,21 +11,19 @@ const Feature = () => {
             </div>
             <div className="feature-body">
 
-                <div>
-                    <Row className="mt-3 pics">
-                        {/* <Row className="pics"> */}
-                        <Col sm>
+                <Container className="">
+                    <Row className="text-center mx-auto mt-3 justify-content-md-center">
+                        <Col className="mb-3">
                             <img className="img4" src="https://image.freepik.com/free-vector/hand-drawn-hospital-reception-scene-with-people-wearing-face-masks_23-2148813989.jpg" alt="" srcset="" />
                         </Col>
-                        <Col sm>
+                        <Col className="mb-3">
                             <img className="img4" src="https://image.freepik.com/free-vector/doctor-patient-desk-hospital-office-clinic-visit-exam-meeting-with-physician-conversation-with-medic-about-diagnosis-results_284092-936.jpg" alt="" srcset="" />
                         </Col>
-                        <Col sm>
+                        <Col className="mb-3">
                             <img className="img4" src="https://image.freepik.com/free-vector/hospital-reception-scene-with-face-masks_52683-55277.jpg" alt="" />
                         </Col>
-                        {/* </Row> */}
                     </Row>
-                </div>
+                </Container>
 
                 <div>
                     <h1 className="tittle">Our Team</h1>

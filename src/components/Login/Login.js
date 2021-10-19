@@ -7,8 +7,6 @@ import Header from '../Header/Header';
 import "./Login.css"
 
 
-
-
 const Login = () => {
 
     const { signinUsingGoogle, error } = useAuth()
@@ -37,7 +35,10 @@ const Login = () => {
                 <br />
                 <br />
                 <button onClick={signinUsingGoogle} className="btn-2 p-2 mt-4">Google Sign In</button>
-                <p>{error}</p>
+                {/* <p>{error}</p> */}
+                <div className="row mx-5 mb-3 text-center text-danger">
+                    <p > {error}</p>
+                </div>
             </div>
 
             <div className="w-100">

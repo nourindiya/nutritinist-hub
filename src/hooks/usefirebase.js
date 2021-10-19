@@ -23,9 +23,6 @@ const useFirebase = () => {
         e.preventDefault();
     }
 
-
-
-
     const handleEmailChange = e => {
         setEmail(e.target.value);
     }
@@ -108,6 +105,7 @@ const useFirebase = () => {
         signInWithPopup(auth, googleProvider)
             .then(result => {
                 setUser(result.user)
+                setError('');
             })
             .catch(error => {
                 setError(error.message);

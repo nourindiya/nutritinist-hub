@@ -6,13 +6,11 @@ import "./Sevice.css"
 const Service = (props) => {
     const { name, img, description, id } = props.service
     return (
-        <div className="service">
-            <div>
-                <img className="card-img" src={img} alt="" srcset="" />
-            </div>
-            <div className="card-body">
-                <h2>{name}</h2>
-                <p>{description}</p>
+        <div className="service pb-3 px-4 pt-2 text-center">
+            <img src={img} alt="" srcset="" />
+            <h2>{name}</h2>
+            <p>{description}</p>
+            <div className="text-center">
                 <Link to={`/details/${id}`}>
                     <button className="btn">Details</button>
                 </Link>
