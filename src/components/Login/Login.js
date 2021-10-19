@@ -12,17 +12,6 @@ import "./Login.css"
 const Login = () => {
 
     const { signinUsingGoogle, error } = useAuth()
-    // const location = useLocation();
-    // const history = useHistory();
-    // const redirect_uri = location.state?.from || '/login';
-
-    // const handleGoogleSignIn = () => {
-
-    //     signInUsingGoogle()
-    //         .then(result => {
-    //             // history.push(redirect_uri);
-    //         })
-    // }
 
     return (
         <div>
@@ -43,10 +32,7 @@ const Login = () => {
                     <br />
                     <input className="btn-2" type="submit" value="Submit" />
                 </Form>
-
-
                 <br />
-
                 <Link to="/register">New to Nutritinist Hub?</Link>
                 <br />
                 <br />

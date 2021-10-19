@@ -20,7 +20,6 @@ const Experst = () => {
                 <Col>
                     <img className="ex-img" src="https://image.freepik.com/free-vector/medical-good-team-hospital-staff-doctors-nurse-illustration_1284-53038.jpg" alt="" />
                 </Col>
-
             </Row>
         </Container >
     );

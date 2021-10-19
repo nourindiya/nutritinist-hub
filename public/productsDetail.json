@@ -4,17 +4,10 @@
             "gender": "Female",
             "name": "Farzana Ahmed",
             "description": "Former Nutritionist & Dietitian Labaid Specilized Hospital",
-            "location": {
-                "street": "9278 new road",
-                "city": "kilcoole"
-            },
             "email": "farzana1@gmail.com",
             "login": {
-                "username": "silverswan131",
-                "password": "firewall",
                 "id": "1"
             },
-            "phone": "011-962-7516",
             "picture": {
                 "img": "https://www.farzanaahmedbd.com/assets/images/Dietitian2.jpg"
             }
@@ -23,17 +16,10 @@
             "gender": "Female",
             "name": "Ms. Tamanna Chowdhury",
             "description": "Principal Dietician Apollo Hospital,House-23,Road-2/3,Gulshan Dhaka",
-            "location": {
-                "street": "9278 new road",
-                "city": "kilcoole"
-            },
             "email": "tamanna@hotmail.com",
             "login": {
-                "username": "silverswan131",
-                "password": "firewall",
                 "id": "2"
             },
-            "phone": "011-962-7516",
             "picture": {
                 "img": "https://th.bing.com/th/id/OIP.FaduhhgL6Adf7q0Lycr9YwHaEK?pid=ImgDet&rs=1"
             }
@@ -42,17 +28,10 @@
             "gender": "Female",
             "name": "Sumaiya Shahnaz",
             "description": "Specialty: Nutrition  Ibn Sina Hospital,Dhanmondi, Dhaka 1209",
-            "location": {
-                "street": "9278 new road",
-                "city": "kilcoole"
-            },
             "email": "sumaiya1@gmail.com",
             "login": {
-                "username": "silverswan131",
-                "password": "firewall",
                 "id": 3
             },
-            "phone": "011-962-7516",
             "picture": {
                 "img": "https://www.cureindia.com/images/uploads/doctors/image/560289917Dr%20Shilpi%20Bhadani.jpg"
             }
@@ -61,17 +40,10 @@
             "gender": "Female",
             "name": "Dr Dilara Makhbul",
             "description": "MBBS , Nutrition & Dietetics ,Labaid Specilized Hospital",
-            "location": {
-                "street": "9278 new road",
-                "city": "kilcoole"
-            },
             "email": "Dilara@gmail.com",
             "login": {
-                "username": "silverswan131",
-                "password": "firewall",
                 "id": 4
             },
-            "phone": "011-962-7516",
             "picture": {
                 "img": "https://smcw.edu.in/assets/images/obstetrics_gynecology/hod.png"
             }
@@ -80,17 +52,10 @@
             "gender": "Female",
             "name": "Dr. Kamrun Naher",
             "description": " MBBS, Nutrition & Dietetics,Labaid Specialized Hospital, House- 06, Road-04, Dhanmondi.Dhaka 1205, Bangladesh",
-            "location": {
-                "street": "9278 new road",
-                "city": "kilcoole"
-            },
             "email": "kamrun@gmail.com",
             "login": {
-                "username": "silverswan131",
-                "password": "firewall",
                 "id": 5
             },
-            "phone": "011-962-7516",
             "picture": {
                 "img": "https://th.bing.com/th/id/R.f04f6ef818d78f10b55c2a2c084626ae?rik=Wn7HaorESbbiUA&pid=ImgRaw&r=0"
             }
@@ -99,17 +64,10 @@
             "gender": "Female",
             "name": "Chowdhury Tasneem",
             "description": "Bsc (Hons), MS (INFS-DU) Chamber: United Hospital Ltd Address: Plot 15, Road 71, Gulshan, Dhaka 1212",
-            "location": {
-                "street": "9278 new road",
-                "city": "kilcoole"
-            },
             "email": "tasneem@gmail.com",
             "login": {
-                "username": "silverswan131",
-                "password": "firewall",
                 "id": 6
             },
-            "phone": "011-962-7516",
             "picture": {
                 "img": "https://www.uhlbd.com/backend/web/product_uploads/1599055620_2_Ms.%20Chowdhury%20Tasneem%20Hasin.jpg"
             }

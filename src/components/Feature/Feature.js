@@ -12,7 +12,6 @@ const Feature = () => {
             <div className="feature-body">
 
                 <div>
-
                     <Row className="mt-3">
                         <Row className="pics">
                             <Col sm>
@@ -40,7 +39,6 @@ const Feature = () => {
                                 <p className="pp text-center">Chairman of Nutritionist Hub</p>
                             </div>
                         </Col>
-
                         <Col className="t mb-3 mx-3" xs={6} md={3}>
                             <div>
                                 <img className="team" src="https://image.freepik.com/free-photo/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.jpg" alt="" srcset="" />
@@ -50,8 +48,6 @@ const Feature = () => {
                                 <p className="pp text-center">Vice Pesident of Nutritionist Hub</p>
                             </div>
                         </Col>
-
-
                         <Col className="t mb-3  mx-3" xs={6} md={3}>
                             <div>
                                 <img className="team" src="https://image.freepik.com/free-photo/doctor-standing-with-folder-stethoscope_1291-16.jpg?1" alt="" srcset="" />
@@ -62,7 +58,6 @@ const Feature = () => {
                             </div>
                         </Col>
                     </Row>
-
                     <div>
                         <Row className="text-center imp">
                             <Col>
@@ -74,7 +69,6 @@ const Feature = () => {
                                 <div className="text-center">
                                     <button className="btn-2">Learn More</button>
                                 </div>
-
                             </Col>
                         </Row>
                     </div>

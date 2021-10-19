@@ -9,6 +9,7 @@ import { Col, Row } from 'react-bootstrap';
 const About = () => {
     return (
         <div className="about-container">
+
             <div className="header">
                 <Header></Header>
             </div>
@@ -73,14 +74,6 @@ const About = () => {
                 </div>
 
 
-
-
-
-
-
-
-
-
                 {/* card container 2 */}
                 <div className="mt-5 mx-auto">
                     <p className="tittle">Departments</p>
@@ -128,15 +121,13 @@ const About = () => {
                     <p className="pp">Visit Us</p>
                     <a href="https://www.livestrong.com/article/284404-what-is-the-role-of-a-nutritionist/">www.nutrition.hub.com</a>
                 </div>
-
-
-
             </div>
 
 
             <div className="footer">
                 <Footer></Footer>
             </div>
+
         </div >
     );
 };

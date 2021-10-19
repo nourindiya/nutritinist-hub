@@ -28,7 +28,6 @@ const Contact = () => {
                 </div>
 
 
-
                 <div className="form-container">
                     <div className="form-img">
                         <img src="https://image.freepik.com/free-vector/travel-road-street-map-with-location-pin-symbol-vector-illustration_1284-2005.jpg" alt="" srcset="" />
@@ -83,17 +82,13 @@ const Contact = () => {
                         </Row>
                     </div>
                 </div>
-
-
-
-
-
             </div>
 
             {/* footer Container */}
             <div className="footer">
                 <Footer></Footer>
             </div>
+
         </div>
     );
 };
